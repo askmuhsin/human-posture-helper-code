@@ -3,10 +3,6 @@ import matplotlib.pyplot as plt
 with open('skeleton_pos.txt') as f:
     data = f.readlines()
 
-# for row in data:
-#     if int(row[:3]) == 278:
-#         posture = row
-
 for row in data:
     posture = row
 
@@ -52,5 +48,7 @@ for row in data:
 
     plt.title(row[:3])
     plt.xlim(-1, 0)
-    plt.show()
-    break
+    plt.pause(0.1)
+    plt.clf()
+
+plt.show()
