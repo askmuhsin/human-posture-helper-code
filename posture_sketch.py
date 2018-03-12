@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import argparse
 
 ap = argparse.ArgumentParser()
-ap.add_argument("-d", "--dataset", default='skeleton_pos.txt',
+ap.add_argument("-d", "--dataset", default='./dataset/skeleton_pos.txt',
                     help="path to input dataset")
 args = vars(ap.parse_args())
 
